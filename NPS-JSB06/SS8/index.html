@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login & Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-register displayNone">
+
+            <form id="register-form">
+                
+                <h2>REGISTER</h2>
+
+                <div class="text-box">
+                    <h4>First Name</h4>
+                    <input type="text" name="firstName" placeholder="Your First Name">
+                </div>
+
+                <div class="text-box">
+                    <h4>Last Name</h4>
+                    <input type="text" name="lastName" placeholder="Your Last Name">
+                </div>
+
+                <div class="text-box">
+                    <h4>Email</h4>
+                    <input type="text" name="email" placeholder="Your Email">
+                </div>
+
+                <div class="text-box">
+                    <h4>Password</h4>
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+
+                <div class="text-box">
+                    <h4>Confirm Password</h4>
+                    <input type="password" name="confirmPassword" placeholder="Repeat Password">
+                </div>
+
+                <div class="text-box">
+                    <button type="submit">Register</button>
+                    <p id="toLogin" onclick="toLogin()">Already have an account. Click here</p>
+                </div>
+
+            </form>
+            
+        </div>
+
+
+        <!-- Login -->
+
+        <div class="form-login">
+
+            <form id="login-form">
+                
+                <h2>LOGIN</h2>
+
+                <div class="text-box">
+                    <h4>Email</h4>
+                    <input type="text" name="email" placeholder="Your Email">
+                </div>
+
+                <div class="text-box">
+                    <h4>Password</h4>
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+
+                <div class="text-box">
+                    <button type="submit">LOGIN</button>
+                    <p id="toRegister" onclick="toRegister()">I don't have account</p>
+                </div>
+
+            </form>
+            
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
