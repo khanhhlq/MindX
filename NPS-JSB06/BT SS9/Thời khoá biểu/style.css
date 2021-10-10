@@ -1,0 +1,17 @@
+body{
+    background-image: url("./bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#first{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#first caption{
+    margin: 2rem 0px;
+}
