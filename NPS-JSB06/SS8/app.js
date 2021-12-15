@@ -95,3 +95,7 @@ login.addEventListener("submit", function(){
 });
 
 
+
+for (let i; i <=10; i++){
+    
+}

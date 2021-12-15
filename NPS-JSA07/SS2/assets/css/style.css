@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Phần style chung */
+
+.max-width{
+    max-width: 1300px;
+    padding: 20px 50px;
+    margin: 0px auto;
+}
+
+/* Home Menu */
+
+.home-menu{
+    position: relative;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    z-index: 1;
+}
+
+.home-menu::after{
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 1;
+    z-index: -1;
+}
+
+nav{
+    margin: 0px 10%;
+}
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .max-width .logo img{
+    height: 80px;
+    width: 80px;
+}
+
+nav .max-width .menu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+    width: 600px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .max-width .menu li{
+    list-style: none;  
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 19px;
+}
+
+nav .max-width .menu li:hover{
+    color: orange;
+}
+
+/* Content Menu */
+
+.home-menu .content-menu{
+    position: relative;
+    height: 200px;
+    width: 900px;
+    padding: 20px 50px;
+    margin: 0px 10%;
+}
+
+.home-menu .content-menu .text p{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 150;
+    line-height: 60px;
+    color: #fff;
+}
+
+.home-menu .content-menu .multi-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.home-menu .content-menu .multi-button button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    font-size: 17px;
+    background: none;
+    cursor: pointer;
+}
+
+#btn-1{
+    color: #fff;
+    background-color: orange;
+}
+
+#btn-1:hover{
+    background-color: peru;
+}
+
+#btn-2{
+    color: orange;
+    background-color: none;
+}
