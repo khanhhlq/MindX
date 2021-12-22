@@ -141,6 +141,12 @@ nav .max-width .menu li:hover{
 
 /* Home content */
 
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .home-content .max-width{
     display: flex;
     flex-direction: column;
@@ -156,4 +162,51 @@ nav .max-width .menu li:hover{
 
 .home-content .content-boxes{
     display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.content-boxes .content-box{
+    width: 250px;
+    height: fit-content;
+}
+
+.content-boxes .content-box i{
+    color: orange;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.content-boxes .content-box p{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 350;
+}
+
+.content-boxes .content-box .title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Home Banner */
+
+.home-banner{
+    width: 100%;
+    margin-top: 30px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-banner .banner-image{
+    width: 25%;
+    height: 100%;
+
+}
+
+.home-banner .banner-image img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
