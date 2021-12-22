@@ -14,6 +14,19 @@
     padding: 20px 50px;
     margin: 0px auto;
 }
+.max-width .title{
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.max-width .orange-bar{
+    width: 100px;
+    height: 2px;
+    background: orange;
+    margin-top: 30px;
+}
 
 /* Home Menu */
 
@@ -76,8 +89,11 @@ nav .max-width .menu li:hover{
 /* Content Menu */
 
 .home-menu .content-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    height: 200px;
+    height: 500px;
     width: 900px;
     padding: 20px 50px;
     margin: 0px 10%;
@@ -121,4 +137,23 @@ nav .max-width .menu li:hover{
 #btn-2{
     color: orange;
     background-color: none;
+}
+
+/* Home content */
+
+.home-content .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content .max-width .about{
+    margin-top: 30px;
+}
+
+/* Box content */
+
+.home-content .content-boxes{
+    display: flex;
 }
