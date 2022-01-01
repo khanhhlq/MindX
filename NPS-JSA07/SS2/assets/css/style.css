@@ -15,7 +15,7 @@
     margin: 0px auto;
 }
 .max-width .title{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 40px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -152,6 +152,7 @@ nav .max-width .menu li:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 70px;
 }
 
 .home-content .max-width .about{
@@ -165,6 +166,7 @@ nav .max-width .menu li:hover{
     width: 1100px;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .content-boxes .content-box{
@@ -194,6 +196,7 @@ nav .max-width .menu li:hover{
 .home-banner{
     width: 100%;
     margin-top: 30px;
+    padding: 30px 0px 0px 0px;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -209,4 +212,141 @@ nav .max-width .menu li:hover{
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+/* ADS */
+
+.ads{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ads .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.ads .ads-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px 100px 0px;
+    width: 1200px;
+}
+
+.ads .ads-content .phone{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ads .ads-content .how-to-use{
+    width: 50%;
+}
+
+.ads .ads-content .phone img{
+    width: 200px;
+    margin-right: 40px;
+}
+
+
+.ads .ads-content .how-to-use .text{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    margin-left: 40px;
+}
+
+.ads .ads-content .how-to-use .text p{
+    padding: 16px 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ads .ads-content .how-to-use .text i{
+    color: orange;
+    margin-right: 16px;
+    font-size: 35px;
+}
+
+.ads .ads-content .how-to-use .download{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+.ads .ads-content .how-to-use .download img{
+    width: 180px;
+    margin-right: 15px;
+}
+
+/* Cities */
+.cities{
+
+}
+
+.cities .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.cities .container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.cities .container .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.cities .container .row .col{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 18%;
+}
+
+.cities .container .row .col img{
+    width: 100%;
+}
+
+.cities .container .row .col .info{
+    display: flex;
+    padding: 4px 0px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.cities .container .row .col h4{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 8px 0px;
+    letter-spacing: 1px;
+}
+
+.cities .container .row .col .info i {
+    margin-left: 7px;
+    margin-right: 10px;
+    color: orange;
+}
+
+.cities .container .row .col .info .twitter{
+    text-decoration: underline;
+    color: orange;
+}
+
+.cities .container .row .col .info .twitter:hover{
+    color: rgb(212, 143, 14);
 }
