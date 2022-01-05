@@ -1,6 +1,6 @@
 // Câu 1
 
-n = prompt("Vui lòng nhập tham số cho biến number")
+n = Number(prompt("Vui lòng nhập tham số cho biến number"))
 
 function findEven(number){
     console.log("Các số chẵn trong khoảng từ 4 đến", number)
@@ -34,7 +34,7 @@ container.addEventListener('mouseout', function(){
 for (let i = 1; i < 6; i++){
     for (let j = 1; j <= i; j++){
         document.writeln("1");
-    }
+    }z
     document.write("</br>")
 }
 
