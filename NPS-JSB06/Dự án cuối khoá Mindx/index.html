@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" user-scalable="no" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>THE SQUID GAME</title>
+</head>
+<body>
+    <!-- START - NAVBAR -->
+        <div id="topbutton" href="#top" class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/images/logo.png" alt="" width="100px"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html" style="color: rgb(240, 21, 21);">Trang chủ</a></li>
+                    <li><a href="./news/news.html">Bài viết</a></li>
+                    <li><a href="./watch/watch.html">Xem phim</a></li>
+                    <li><a href="./shop/shop.html">Cửa hàng</a></li>
+                    <li><a href="#footer">Thông tin</a></li>
+                </ul>
+            </div>
+            <div class="tool">
+                <div class="search">
+                    <i onclick="searchBox()" class="hiddenBox fas fa-search"></i>
+                    <i onclick="removeSearchBox()" class="removeSearchBox fas fa-search noneSearchBox"></i>
+                </div>
+                <div class="search-box displayNone">
+                    <input type="text" value="" placeholder="Tìm kiếm">
+                </div>
+                <div class="account">
+                    <a href="./account/account.html" style="text-decoration: none; color: #fff;"><p>ĐĂNG NHẬP</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-second">
+            <div class="navbar-scale">
+                <img src="./assets/images/favicon.png" alt="">
+                <div class="menu-hidden">
+                    <i onclick="scaleMenuOpen()" class="scaleMenuFirst fas fa-bars fa-2x"></i>
+                    <i onclick="scaleMenuClose()" class="scaleMenuSecond fas fa-times fa-2x scaleMenuClose"></i>
+                </div>
+            </div>
+            <div class="navbar-scale-menu displayMenuNone">
+                <div class="menu">
+                    <ul>
+                        <li><a href="./index.html" style="color: rgb(240, 21, 21);">Trang chủ</a></li>
+                        <li><a href="./news/news.html">Bài viết</a></li>
+                        <li><a href="./watch/watch.html">Xem phim</a></li>
+                        <li><a href="./shop/shop.html">Cửa hàng</a></li>
+                        <li><a href="#footer">Thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="tool">
+                    <div class="account">
+                        <a href="./account/account.html" style="text-decoration: none; color: #fff;"><p>ĐĂNG NHẬP</p></a>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" value="" placeholder="Tìm kiếm">
+                    </div>
+                </div>
+            </div>            
+        </div>
+    <!-- END - NAVBAR -->
+
+    <div class="container-hero">
+  
+    <!-- START - HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="container-content-first">
+                    <img src="./assets/images/squidgame-header.png" alt="" width="300px">
+                    <h2>Trò chơi con mực</h2>
+                    <p class="paragraph">
+                        Hàng trăm người chơi kẹt tiền chấp nhận một lời mời kỳ lạ: thi đấu trong các trò chơi trẻ con. Đón chờ họ là một giải thưởng hấp dẫn – và những rủi ro chết người.
+                    </p>
+                    <p class="btn-start"><a href="#hook">BẮT ĐẦU</a></p>
+                </div>
+                <div class="container-content-second">
+                    <div class="container-content-second-hero-1">
+                        <img src="./assets/images/favicon.png" alt="" width="50px">
+                        <p>Xem mọi thông tin về Squid Game.</p>
+                    </div>
+                    <div class="container-content-second-hero-2">
+                        <p class="main"><a href="./news/news.html">TÌM HIỂU NGAY</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- END - HEADER -->
+
+
+
+    <!-- START - HOOK -->
+        <div id="hook">
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+            <div class="hook-text">Một phép thử tàn bạo về đạo đức và nhân tính. Diễn viên chính: Lee Jung Jae (Phụ tá), Park Hae Soo (Đời sống ngục tù).</div>
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+        </div>
+    <!-- END - HOOK -->
+
+
+    <!-- START - CHANGE MODE -->
+        <div class="changeMode" onclick="darkModeButton()">
+            <i id="disableMode" class="disableMode fas fa-sun fa-2x"></i>
+            <i id="activeMode" class="fas fa-moon fa-2x"></i>
+        </div>
+    <!-- END - CHANGE MODE -->
+
+
+
+    <!-- START - EPISODES -->
+        <div class="episodes-container">
+
+            <div class="episodes-title">
+                <p class="title">Trò chơi con mực</p>
+                <p class="sesson">Mùa 1</p>
+                <p class="year">Năm phát hành: 2021</p>
+                <p class="description">Hàng trăm người chơi kẹt tiền chấp nhận một lời mời kỳ lạ: thi đấu trong các trò chơi trẻ con. Đón chờ họ là một giải thưởng hấp dẫn – và những rủi ro chết người.</p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-1.jpg" alt="">
+                    <h3>1. Đèn Đỏ, Đèn Xanh</h3>
+                    <p>Mong dễ dàng hốt được tiền, Gi Hun bần cùng và tuyệt vọng đồng ý tham gia vào trò chơi bí ẩn. Không lâu sau vòng đầu tiên, nỗi kinh hoàng không tưởng bắt đầu lộ diện.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-2.jpg" alt="">
+                    <h3>2. Địa ngục</h3>
+                    <p>Không thể quyết định nên đi tiếp hay dừng cuộc chơi, cả nhóm đã biểu quyết. Thế nhưng, đời thật có lẽ cũng ác nghiệt không khác gì trò chơi.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-3.jpg" alt="">
+                    <h3>3. Người đàn ông cầm ô</h3>
+                    <p>Một số người chơi đi tiếp vào vòng trong – nơi ẩn giấu phần thưởng ngọt ngào và rủi ro chí tử – với lợi thế bí mật. Cùng lúc đó, Jun Ho lẻn vào trong.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-4.jpg" alt="">
+                    <h3>4. Bất chấp nỗi sợ, quyết không thay lòng</h3>
+                    <p>Những người chơi bắt tay hợp tác, nhưng khi khu kí túc tắt đèn, sẽ không một ai được an toàn. Trò chơi thứ ba buộc nhóm của Gi Hun phải tư duy chiến lược.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-5.jpg" alt="">
+                    <h3>5. Thế giới công bằng</h3>
+                    <p>Gi Hun và các thành viên trong nhóm thay phiên nhau canh gác suốt đêm. Bọn đeo mặt nạ gặp rắc rối với các đồng phạm của chúng.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-6.jpg" alt="">
+                    <h3>6. Gganbu</h3>
+                    <p>Người chơi bắt cặp trong trò chơi thứ tư. Gi Hun vật lộn với tình huống khó xử về đạo đức, Sang Woo chọn cách tự bảo vệ và Sae Byeok chia sẻ câu chuyện chưa kể của mình.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-7.jpg" alt="">
+                    <h3>7. VIP</h3>
+                    <p>Chỉ huy đeo mặt nạ chào đón khách VIP đến cơ sở để xem cận cảnh cuộc chơi. Trong trò chơi thứ năm, một số người chơi sụp đổ trước áp lực.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-8.jpg" alt="">
+                    <h3>8. Thủ lĩnh</h3>
+                    <p>Tới vòng cuối, sự ghê sợ và nghi kỵ đã hằn sâu giữa những người vào chung kết. Jun Ho bỏ trốn, quyết tâm vạch trần những bí mật bẩn thỉu của trò chơi.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/episode-thumbnail-image-9.jpg" alt="">
+                    <h3>9. Một ngày may mắn</h3>
+                    <p>Vòng cuối mang đến một thử thách ác độc khác – nhưng lần này, kết cục chỉ phụ thuộc vào một người chơi. Tác giả của trò chơi cũng lộ diện.</p>
+                </div>
+                <div class="column">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div> 
+    <!-- END - EPISODES --> 
+
+
+
+    <!-- START - CAST -->
+        <div class="cast-container">
+
+            <div class="cast-title">
+                <p class="title">Diễn viên</p>
+                <p class="sesson">Mùa 1</p>
+                <p class="year">Năm phát hành: 2021</p>
+                <p class="description">Sự thành công của Squid Game bắt nguồn từ nhiều yếu tố như kịch bản độc đáo, ly kỳ, âm nhạc, hình ảnh, góc quay và cả dàn diễn viên xuất sắc gồm những cái tên đình đám của làng giải trí xứ Hàn. </p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./assets/images/cast/1.jpeg" alt="">
+                    <h3>Lee Jung-jae</h3>
+                    <p>Lee Jung Jae đóng vai Gi Hoon - nhân vật chính của phim. Đây là người bố thương con nhưng bị vợ bỏ, thất nghiệp, nghiện cờ bạc, mắc nợ hàng trăm triệu won và cần kiếm tiền chữa bệnh cho mẹ.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/2.jpeg" alt="">
+                    <h3>HoYeon Jung</h3>
+                    <p>Nữ diễn viên Jung Ho Yeon lập tức gây được tiếng vang khi chuyển hướng sang lĩnh vực diễn xuất với vai diễn đầu tay trong Squid Game. Trong phim, cô vào vai Sae Byuk - cô gái người Triều Tiên, tham gia cuộc chơi sinh tồn nhằm kiếm tiền để đón gia đình sang sống cùng và mua nhà.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/3.jpeg" alt="">
+                    <h3>Wi Ha-joon</h3>
+                    <p>Wi Ha Joon vào vai Hwang Jun Ho - chàng cảnh sát thâm nhập trò chơi nhằm tìm kiếm người anh trai đã thất lạc. Tài tử sinh năm 1991 thành công trong cả hai lĩnh vực diễn xuất và thời trang nhờ sở hữu ngoại hình cao lớn, ưa nhìn và gương mặt "lạnh".</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/4.jpg.crdownload" alt="">
+                    <h3>Gong Yoo</h3>
+                    <p>Dù chỉ xuất hiện ở Squid Game với vai trò khách mời nhưng tài tử Gong Yoo lại là nhân tố mở ra bước ngoặt và cũng gợi lên cái kết mở của cả bộ phim. Nam diễn viên sinh năm 1979 là một cái tên Hàn Quốc đình đám với khán giả Việt.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/5.jpg" alt="">
+                    <h3>Park Hae Soo</h3>
+                    <p>Park Hae Soo thủ vai thứ chính Cho Sang Woo - người em hàng xóm tài giỏi, suýt tự sát bởi mắc nợ, dần đánh mất nhân tính. Trong phim, anh vào vai phản diện rất xuất sắc và ấn tượng</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/6.jpg" alt="">
+                    <h3>Lee Byung Hun</h3>
+                    <p>Lee Byung Hun chỉ xuất hiện trong khoảng nửa tập phim, nhưng lại gây ấn tượng với khán giả. Trong phim, anh vào vai "người anh trai mất tích" và hứa hẹn là "trùm cuối bất" ngờ của bộ phim.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/7.jpg" alt="">
+                    <h3>Kim Joo-ryeong</h3>
+                    <p>Trong Squid Game, nữ diễn viên Kim Joo Ryung vào vai Han Mi-nyeo, một người mẹ mới sinh con nhưng sẵn sàng làm bất cứ điều gì để giành chiến thắng. Dù chủ yếu tham gia các vai phụ trong suốt sự nghiệp diễn xuất của mình nhưng nữ diễn viên 45 tuổi vẫn chứng tỏ được năng lực diễn xuất. </p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/8.jpeg" alt="">
+                    <h3>Heo Sung-tae</h3>
+                    <p>Heo Sung Tae trong vai vào vai Deok Soo - một gã giang hồ cộm cán. Vì nợ tiền sòng bạc nên anh tìm đến trò chơi để kiếm tiền trả nợ. Là một nhân vật phản diện, Deak Soo nhiều lần nhẫn tâm ra tay trừ khử người chơi để rút gọn thời gian.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/9.jpeg" alt="">
+                    <h3>Lee Yoo Mi</h3>
+                    <p>Lee Yoo Mi bỗng chốc nổi tiếng khắp châu Á sau khi tham gia Squid Game. Tuy nhiên, nữ diễn viên 9x đã có kinh nghiệm đóng phim hơn 10 năm. Trong Squid Game, cô vào vai số 240 - Ji Yeong. Dù chỉ xuất hiện với vai phụ ngắn ngủi nhưng Lee Yoo Mi lại gây thương nhớ bởi là nhân vật đáng thương và tính cách lương thiện. </p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/11.jpg" alt="">
+                    <h3>Oh Young Soo</h3>
+                    <p>Tài tử gạo cội Oh Young Soo hóa thân trong vai Oh Il Nam - ông cụ bị ung thư não và là người chơi lớn tuổi nhất trong Squid Game. Nam diễn viên 76 tuổi là một gương mặt nổi tiếng và có ảnh hưởng của điện ảnh xứ Hàn và được nhiều thế hệ khán giả yêu mến. Ông từng góp mặt trong bộ phim nổi tiếng Xuân hạ thu đông rồi lại xuân.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/12.jpg" alt="">
+                    <h3>Kim Young-ok</h3>
+                    <p>Kim Young-ok chỉ xuất hiện trong khoảng nửa tập phim, nhưng lại gây ấn tượng với khán giả. Trong phim, bà vào vai "người mẹ của nhân vật Lee Jung-jae" và hai người họ đã đem lại rất nhiều nước mắt cho khán giả.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/images/cast/Actor-Anupam-Tripath2i.jpg" alt="">
+                    <h3>Anupam Tripathi</h3>
+                    <p>Anupam Tripathi, nam diễn viên người Ấn Độ, là một yếu tố lạ trong Squid Game. Trong phim, anh vào vai Ali - người lao động nước ngoài tại Hàn Quốc, yêu gia đình và rất lịch sự. Anupam Tripathi từng tốt nghiệp trường Đại học Nghệ thuật Quốc gia Hàn Quốc. Trước Squid Game, nam diễn viên sinh năm 1988 từng góp mặt trong các bộ phim Hàn Quốc khác như: Miss & Mrs. Cops, Biên Niên Sử Arthdal, Space Sweepers, The 8th Night...</p>
+                </div>
+            </div>
+        </div> 
+    <!-- END - CAST --> 
+
+
+    <!-- START - TRAILER -->
+        <div class="trailer">
+            <div class="trailer-title">
+                <p class="title">Trailer</p>
+                <p class="sesson">Mùa 1</p>
+                <p class="year">Năm phát hành: 2021</p>
+                <p class="description">Một câu chuyện của đạo diễn Hwang Dong-hyuk</p>
+            </div>
+            <video id="trailer" src="./assets/video/trailer.mp4" controls></video>
+        </div>
+    <!-- END - TRAILER -->
+
+    <!-- News - START -->
+    <h3 class="section-title section-title-bold-center"><b></b><span class="section-title-main">TIN TỨC HÀNG NGÀY</span><b></b></h3>
+
+    <div class="news-container">
+
+        <!-- <div class="news-title">
+            <p class="title"></p>
+            <p class="sesson"></p>
+            <p class="year"></p>
+            <p class="description"></p>
+        </div> -->
+
+        <div class="row">
+            <div class="column">
+                <img src="./assets/images/news/news-1.jpg" alt="">
+                <h3>'Squid Game' có mùa hai</h3>
+                <p>Hwang Dong Hyuk - đạo diễn kiêm biên kịch "Squid Game" - xác nhận đang lên kế hoạch cho mùa hai series đình đám của Hàn Quốc.</p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-2.jpg" alt="">
+                <h3>Làn sóng Hàn Quốc càn quét thế giới</h3>
+                <p>Tại trường quay ở Seoul, một diễn viên thủ vai nhân vật đã sống 600 năm vì bị nguyền rủa, trong bộ phim được Hàn Quốc hy vọng sẽ chinh phục khán giả toàn cầu.</p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-5.jpg" alt="">
+                <h3>'Squid Game không hay như đồn thổi'</h3>
+                <p>Squid Game được người Việt xem và bàn đến nhiều vì chiếu đúng lúc giãn cách vì dịch chứ không phải vì quá hay như nhiều người đồn thổi.</p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-6.jpg" alt="">
+                <h3>Jung Ho Yeon: 'Tôi nổi tiếng quá nhanh sau Squid Game'</h3>
+                <p>Người mẫu Jung Ho Yeon nói cố giữ không bị cuốn theo sự nổi tiếng, sau vai Sae Byeok trong siêu phẩm "Squid Game". </p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-7.jpg" alt="">
+                <h3>Người Việt có làm được phim như Squid Game?</h3>
+                <p>Liệu các nhà làm phim Việt Nam có đủ tài năng, sáng tạo những tác phẩm điện ảnh giống The Raid của Indonesia, Squid Game của Hàn Quốc?  </p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-8.jpg" alt="">
+                <h3>Những bản nhạc tạo kịch tính cho 'Squid Game'</h3>
+                <p>Các nhạc phẩm không lời, cổ điển tạo kịch tính và tương phản cho chiến cuộc sinh tồn trong phim Hàn gây sốt toàn cầu "Squid Game". </p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-3.jpg" alt="">
+                <h3>Mất 28.000 USD vì mua tiền số ăn theo Squid Game</h3>
+                <p>Bernard, sống ở Thượng Hải, đã mất sạch khoản tiền tiết kiệm vì đầu tư vào Squid - tiền số dựa theo loạt phim ăn khách Squid Game.</p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-9.jpg" alt="">
+                <h3>Những chủ doanh nghiệp Hàn Quốc tuyệt vọng trong nợ nần</h3>
+                <p>Tình trạng nợ nần trong giới doanh nhân Hàn Quốc phổ biến đến nỗi nếu Donald Trump là người Hàn, ông có thể đã kiệt quệ vì phá sản. </p>
+            </div>
+            <div class="column">
+                <img src="./assets/images/news/news-10.jpg" alt="">
+                <h3>'Squid Game' - phim Hàn thành hiện tượng toàn cầu</h3>
+                <p>Cơn sốt "Squid Game" khiến đồng won được tìm kiếm nhiều thứ hai trên thế giới, hàng loạt xu hướng ăn theo hút hàng triệu người tham gia. </p>
+            </div>
+        </div>
+    </div> 
+
+    
+    <div class="onTop">
+        <a href="#top" style="color: white"><button id="myBtn"><i class="fas fa-angle-up"></i></button></a>
+    </div>
+
+    <!-- START - FOOTER -->
+        <div id="footer">
+            <p class="title">Bạn có câu hỏi? <a href="#">Liên hệ với chúng tôi.</a></p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Câu hỏi thường gặp</td>
+                    <td>Trung tâm trợ giúp</td>
+                    <td>Tài khoản</td>
+                    <td>Trung tâm đa phương tiện</td>
+                </tr>
+                <tr>
+                    <td>Quan hệ với nhà đầu tư</td>
+                    <td>Việc làm</td>
+                    <td>Các cách xem</td>
+                    <td>Điều khoản sử dụng</td>
+                </tr>
+                <tr>
+                    <td>Quyền riêng tư</td>
+                    <td>Tùy chọn cookie</td>
+                    <td>Thông tin doanh nghiệp</td>
+                    <td>Liên hệ với chúng tôi</td>
+                </tr>
+                <tr>
+                    <td>Kiểm tra tốc độ</td>
+                    <td>Thông báo pháp lý</td>
+                    <td>Chỉ có trên Squid Game</td>
+                </tr>
+            </table>
+            <p class="nocopyright">Bản quyền thuộc về <a href="https://bit.ly/3j9Hgh3">Lê Quốc Khánh</a> & <a href="https://bit.ly/3vfCa7L">Đặng Nguyên Khải</a></p>
+        </div>
+    <!-- END - FOOTER -->
+</div>
+
+
+    <!-- START - SOUND -->
+        <div class="background-music">
+            <audio id="bg-music" src="./assets/music/background-music.mp3" autoplay loop></audio>
+            <audio src="./assets/music/napdan.mp3" autoplay></audio>
+            <audio src="./assets/music/shotgunsound.mp3" autoplay></audio>
+        </div>
+    <!-- END - SOUND -->
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watch.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>SQUID GAME - Xem phim</title>
+</head>
+<body>
+    <!-- START - NAVBAR -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="" width="100px"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../news/news.html">Bài viết</a></li>
+                    <li><a href="./watch.html" style="color: rgb(240, 21, 21);">Xem phim</a></li>
+                    <li><a href="../shop/shop.html">Cửa hàng</a></li>
+                    <li><a href="#footer">Thông tin</a></li>
+                </ul>
+            </div>
+            <div class="tool">
+                <div class="search">
+                    <i onclick="searchBox()" class="hiddenBox fas fa-search"></i>
+                    <i onclick="removeSearchBox()" class="removeSearchBox fas fa-search noneSearchBox"></i>
+                </div>
+                <div class="search-box displayNone">
+                    <input type="text" value="" placeholder="Tìm kiếm">
+                </div>
+                <div class="account">
+                    <a href="../account/account.html" style="text-decoration: none; color: #fff;"><p>ĐĂNG NHẬP</p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-second">
+            <div class="navbar-scale">
+                <img src="../assets/images/favicon.png" alt="">
+                <div class="menu-hidden">
+                    <i onclick="scaleMenuOpen()" class="scaleMenuFirst fas fa-bars fa-2x"></i>
+                    <i onclick="scaleMenuClose()" class="scaleMenuSecond fas fa-times fa-2x scaleMenuClose"></i>
+                </div>
+            </div>
+            <div class="navbar-scale-menu displayMenuNone">
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="../news/news.html">Bài viết</a></li>
+                        <li><a href="./watch.html" style="color: rgb(240, 21, 21);">Xem phim</a></li>
+                        <li><a href="../shop/shop.html">Cửa hàng</a></li>
+                        <li><a href="#footer">Thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="tool">
+                    <div class="account">
+                        <a href="../account/account.html" style="text-decoration: none; color: #fff;"><p>ĐĂNG NHẬP</p></a>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" value="" placeholder="Tìm kiếm">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- END - NAVBAR -->
+
+    <div class="container-hero">
+
+    <!-- START - MOVIES -->
+        <div class="movies">
+            <iframe class="movies-1" width="1280" height="720" src="//www.ok.ru/videoembed/2676393839275" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-2 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676379159211" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-3 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676452821675" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-4 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676452952747" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-5 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676457605803" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-6 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676597787307" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-7 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676565609131" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-8 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676569934507" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <iframe class="movies-9 movies-hidden" width="1280" height="720" src="//www.ok.ru/videoembed/2676596017835" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <div class="select-episode">
+                <p onclick="episode1()" class="episode-1">Tập 1</p>
+                <p onclick="episode2()" class="episode-2 disable">Tập 2</p>
+                <p onclick="episode3()" class="episode-3 disable">Tập 3</p>
+                <p onclick="episode4()" class="episode-4 disable">Tập 4</p>
+                <p onclick="episode5()" class="episode-5 disable">Tập 5</p>
+                <p onclick="episode6()" class="episode-6 disable">Tập 6</p>
+                <p onclick="episode7()" class="episode-7 disable">Tập 7</p>
+                <p onclick="episode8()" class="episode-8 disable">Tập 8</p>
+                <p onclick="episode9()" class="episode-9 disable">Tập 9</p>
+            </div>
+        </div>
+    <!-- END - MOVIES -->
+    
+    
+    <!-- START - HOOK -->
+        <div id="hook">
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+            <div class="hook-text-main">NỘI DUNG PHIM</div>
+            <div class="hook-text">Trò Chơi Con Mực - Squid Game xoay quanh câu chuyện về hàng trăm người đang đối mặt với việc thất nghiệp, không có tiền để sinh sống. Vì thế bọn họ đều nhận được một lời mời tham gia vào trò chơi con mực dành cho trẻ em, nếu chiến thắng sẽ được một số tiền hàng tỷ won. Tất cả những người tham gia đều được đưa đến một nơi xa lạ và bị nhốt tại đó và người dành chiến thắng sẽ nhận được số tiền ấy. Thế nhưng, họn họ tưởng chừng chỉ là một trò chơi nhỏ nên tấp nập tham gia nhưng không hề biết rằng trò chơi phải trả giá bằng cả mạng sống của mình.</div>
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+        </div>
+    <!-- END - HOOK -->
+
+    <div class="onTop">
+        <a href="#top" style="color: white"><button id="myBtn"><i class="fas fa-angle-up"></i></button></a>
+    </div>
+    
+    <!-- START - CHANGE MODE -->
+        <div class="changeMode" onclick="darkModeButton()">
+            <i id="disableMode" class="disableMode fas fa-sun fa-2x"></i>
+            <i id="activeMode" class="fas fa-moon fa-2x"></i>
+        </div>
+    <!-- END - CHANGE MODE -->
+
+    
+    <!-- START - FOOTER -->
+        <div id="footer">
+            <p class="title">Bạn có câu hỏi? <a href="#">Liên hệ với chúng tôi.</a></p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Câu hỏi thường gặp</td>
+                    <td>Trung tâm trợ giúp</td>
+                    <td>Tài khoản</td>
+                    <td>Trung tâm đa phương tiện</td>
+                </tr>
+                <tr>
+                    <td>Quan hệ với nhà đầu tư</td>
+                    <td>Việc làm</td>
+                    <td>Các cách xem</td>
+                    <td>Điều khoản sử dụng</td>
+                </tr>
+                <tr>
+                    <td>Quyền riêng tư</td>
+                    <td>Tùy chọn cookie</td>
+                    <td>Thông tin doanh nghiệp</td>
+                    <td>Liên hệ với chúng tôi</td>
+                </tr>
+                <tr>
+                    <td>Kiểm tra tốc độ</td>
+                    <td>Thông báo pháp lý</td>
+                    <td>Chỉ có trên Squid Game</td>
+                </tr>
+            </table>
+            <p class="nocopyright">Bản quyền thuộc về <a href="https://bit.ly/3j9Hgh3">Lê Quốc Khánh</a> & <a href="https://bit.ly/3vfCa7L">Đặng Nguyên Khải</a></p>
+        </div>
+    <!-- END - FOOTER -->
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>
