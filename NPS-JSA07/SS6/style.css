@@ -12,12 +12,58 @@ body {
 
 .home-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 100px;
 }
 
 .home-container .container-left {
+  height: 500px;
+  width: 70%;
+  padding: 20px;
+  background-color: black;
 }
 
 .home-container .container-right {
+  width: 20%;
+  height: 500px;
+  background-color: burlywood;
+}
+
+.img-icon {
+  width: 90px;
+  height: 65px;
+}
+
+.items {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.items .item {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.items .product-view button:hover {
+  cursor: pointer;
+}
+
+.item .content p {
+  width: 150px;
+  height: 50px;
+}
+
+.item .content h3 {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
