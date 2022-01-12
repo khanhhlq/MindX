@@ -42,13 +42,32 @@ let menu = [
     }
 ]
 
-let menuCart = [];
-// Ép kiểu dữ liệu
-let menuCartString = JSON.stringify(menuCart);
-// Đẩy lên localStorage
-localStorage.setItem("menuCart", menuCartString)
+// let menuCart = [];
+// // Ép kiểu dữ liệu
+// let menuCartString = JSON.stringify(menuCart);
+// // Đẩy lên localStorage
+// localStorage.setItem("menuCart", menuCartString)
 
 
-// Bắt đầu ép kiểu dữ liệu sang chuỗi để đây lên localStorage.
-let menuString =  JSON.stringify(menu);
-localStorage.setItem("menu", menuString)
+// // Bắt đầu ép kiểu dữ liệu sang chuỗi để đây lên localStorage.
+// let menuString =  JSON.stringify(menu);
+// localStorage.setItem("menu", menuString)
+
+let items = document.querySelector('.items');
+
+for (item of menu){
+    items.innerHTML+=`
+    <div class="item">
+        <div class="product-view">
+            <img src="${item.image}" alt="Error Image" class="img-icon">
+            <button type='input' value="${item.name}">Add to list</button>
+        </div>
+        <div class="content">
+            <h3>${item.name}</h3>
+        </div>
+        <p>
+        ${item.title}
+        </p>
+    </div>
+    `
+}
