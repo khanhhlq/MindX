@@ -3,42 +3,42 @@ let menu = [
         name: "Pho",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/3fgMntn'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
     
     {
         name: "Banh da cua",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/31Rhmcl'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
 
     {
         name: "Bun bo hue",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/3qkI9at'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
 
     {
         name: "Bun dau mam tom",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/3K2EGoS'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
 
     {
         name: "Tiet canh",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/3tm39j8'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
 
     {
         name: "Banh cuon",
         title: "Day la mon an co truyen cua Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
-        image: 'https://bit.ly/3HZiWbs'
+        image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     }
 ]
 
@@ -53,21 +53,21 @@ let menu = [
 // let menuString =  JSON.stringify(menu);
 // localStorage.setItem("menu", menuString)
 
-let items = document.querySelector('.items');
+let products = document.querySelector('.products');
+
+
 
 for (item of menu){
-    items.innerHTML+=`
+    products.innerHTML+=`
     <div class="item">
         <div class="product-view">
             <img src="${item.image}" alt="Error Image" class="img-icon">
-            <button type='input' value="${item.name}">Add to list</button>
         </div>
         <div class="content">
             <h3>${item.name}</h3>
+            <p>${item.title}</p>
+            <button type='input' value="${item.name}">Add to list</button>
         </div>
-        <p>
-        ${item.title}
-        </p>
     </div>
     `
 }

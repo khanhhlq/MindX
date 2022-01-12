@@ -7,7 +7,8 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: beige;
+  background-color: #ffcbcb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-container {
@@ -18,10 +19,12 @@ body {
 }
 
 .home-container .container-left {
-  height: 500px;
+  height: 100%;
   width: 70%;
   padding: 20px;
-  background-color: black;
+  background-color: #d9d7f1;
+  border-radius: 25px;
+  border: solid 10px #e7fbbe;
 }
 
 .home-container .container-right {
@@ -30,34 +33,60 @@ body {
   background-color: burlywood;
 }
 
-.img-icon {
-  width: 90px;
-  height: 65px;
-}
-
-.items {
+.products {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.items .item {
+.products .item {
   display: flex;
-  flex-direction: row;
-  background-color: red;
-  width: 250px;
-  height: 200px;
-  padding: 10px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  background-color: #fffdde;
+  width: 300px;
+  padding: 15px;
+  margin: 0px 0px 40px 0px;
+  color: black;
+  border-radius: 10px;
+  border: solid 2px chocolate;
+}
+
+.products .item .product-view {
+  display: flex;
+  justify-content: center;
+}
+
+.img-icon {
+  width: 70px;
+}
+
+.products .item .content h3 {
+  padding: 8px 0px;
+}
+
+.products .item .content p {
+  padding: 5px 0px;
+}
+
+.products .content button {
+  background-color: brown;
+  padding: 8px 8px;
+  border-radius: 4px;
   color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  transition: transform 2s;
 }
 
-.items .product-view button:hover {
+.products .content button:hover {
   cursor: pointer;
+  background-color: rgb(199, 66, 66);
+  transform: scaleY(10px);
 }
 
-.item .content p {
+/* .item .content p {
   width: 150px;
   height: 50px;
 }
@@ -66,4 +95,4 @@ body {
   white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
