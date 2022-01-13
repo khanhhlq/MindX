@@ -1,5 +1,6 @@
 let menu = [
     {
+        id: 1,
         name: "Pho",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -7,6 +8,7 @@ let menu = [
     },
     
     {
+        id: 2,
         name: "Banh da cua",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -14,6 +16,7 @@ let menu = [
     },
 
     {
+        id: 3,
         name: "Bun bo hue",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -21,6 +24,7 @@ let menu = [
     },
 
     {
+        id: 4,
         name: "Bun dau mam tom",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -28,6 +32,7 @@ let menu = [
     },
 
     {
+        id: 5,
         name: "Tiet canh",
         title: "Đay la mon an co truyen Ha Noi va Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -35,6 +40,7 @@ let menu = [
     },
 
     {
+        id: 6,
         name: "Banh cuon",
         title: "Day la mon an co truyen cua Viet Nam",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
@@ -64,7 +70,8 @@ for (item of menu){
             <img src="${item.image}" alt="Error Image" class="img-icon">
         </div>
         <div class="content">
-            <h3>${item.name}</h3>
+        
+            <h3>${item.id}. ${item.name}</h3>
             <p>${item.title}</p>
             <button type='input' value="${item.name}">Add to list</button>
         </div>
