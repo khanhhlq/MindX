@@ -57,7 +57,7 @@ console.log(hamX(2, 3));
 
 // 5. Các tham số còn lại
 
-let X = (a, b, ...args) =>{
+const X = (a, b, ...args) =>{
     console.log(`a = ${a}, ${b}, ...${args.length} args left`)
     console.log(args);
 } 
