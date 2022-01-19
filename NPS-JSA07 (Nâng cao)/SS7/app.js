@@ -48,3 +48,20 @@ const tenHam = (parmeters, ...) =>{
 // VD: Arrow Function
 let arr = [1,2,3,4,5];
 arr.forEach(i => console.log(a + " => " + i * i))
+
+
+// 4. Các tham số mặc định (pending)
+
+let hamX = (a, b = 1) => a*b;
+console.log(hamX(2, 3));
+
+// 5. Các tham số còn lại
+
+let X = (a, b, ...args) =>{
+    console.log(`a = ${a}, ${b}, ...${args.length} args left`)
+    console.log(args);
+} 
+
+X(2,3);
+X(1,2,3,4,5);
+
