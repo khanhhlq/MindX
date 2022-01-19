@@ -10,10 +10,12 @@ console.log(a+ " " + b)
 // Ví dụ:
 {
     {
-        let cha = "Đây là biến được khai báo ở khối 2";
+        let cha = "Đây là biến cha được khai báo ở khối 2";
         {
             console.log("cha: ", cha);
+            var con = "Đây là biến con được khái báo ở khối 3";
         }
     }
     console.log("cha: ", cha); // Sẽ bị lỗi: vì nằm ở ngoài block
 }
+console.log("con: ", con);
