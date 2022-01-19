@@ -65,3 +65,7 @@ const X = (a, b, ...args) =>{
 X(2,3);
 X(1,2,3,4,5);
 
+
+// Bài tập ôn luyện cho phần đã học:
+
+
