@@ -35,9 +35,7 @@ smartPhones.forEach(i => console.log( i.name + " giá là: "+ i.price))
 
 // Bài tập 3
 
-
 const foo = (x,y,z) => console.log( x, y, z );
-
 
 const foo = () => alert("Hello");
 
