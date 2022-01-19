@@ -35,12 +35,12 @@ smartPhones.forEach(i => console.log( i.name + " giá là: "+ i.price))
 
 // Bài tập 3
 
-const foo = (x,y,z) => console.log( x, y, z );
+// const foo = (x,y,z) => console.log( x, y, z );
 
-const foo = () => alert("Hello");
+// const foo = () => alert("Hello");
 
-const foo = (a,b) =>{
-	let m = a+b*100
-	return m
-}
+// const foo = (a,b) =>{
+// 	let m = a+b*100
+// 	return m
+// }
 
