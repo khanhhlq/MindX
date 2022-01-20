@@ -1,0 +1,1 @@
+export { default as log2 } from './log.js'

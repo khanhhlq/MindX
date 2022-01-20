@@ -1,6 +1,9 @@
-import logger, { TYPE_ERROR, TYPE_WARN, TYPE_LOG } from './log.js'
+import { log2 } from './log/index.js'
+import * as constants from './constants.js' // Lấy all data trong constants.js và đưa ra ở dạng object
 
-let type = [TYPE_ERROR, TYPE_WARN, TYPE_LOG];
+console.log(constants);
 
-type.forEach(i => console.log(logger("Test messages ...", i)))
+log2('Test message ...', constants.TYPE_LOG);
+log2('Test message ...', constants.TYPE_ERROR);
+log2('Test message ...', constants.TYPE_WARN);
 
