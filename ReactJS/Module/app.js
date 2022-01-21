@@ -6,4 +6,3 @@ console.log(constants);
 log2('Test message ...', constants.TYPE_LOG);
 log2('Test message ...', constants.TYPE_ERROR);
 log2('Test message ...', constants.TYPE_WARN);
-

@@ -38,7 +38,6 @@ for (item of home_content){
     `
 }
 
-
 let home_banner = [
     {
         image: "./assets/images/1.jpg"
