@@ -41,30 +41,33 @@
 
         const root = document.querySelector('#app')
 
-        const PostItem = () =>{
+        const PostItem = (prop) =>{
+            console.log(prop)
             return(
                 <div className="post-item">
                     <label htmlFor="email">Email</label>
                     <input id="email" />
-                    <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/s600x600/272082159_1089064824987684_3799257947133290859_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=b9115d&_nc_ohc=-AkrZCghJtkAX-4JACN&_nc_ht=scontent.fsgn5-15.fna&oh=00_AT_3mOFruWLF7hwwwGqPYZBcEQyqiHRaWlcqxpkoJ3SqvQ&oe=61EB5A42" alt=""/>
-                    <h2 className="post-title">C#(.NET) - Tương tác với file Excel</h2>
-                    <p className="post-desc">Bạn có kiến thức ngôn ngữ C#! Bạn muốn thực tương tác với file
-                    excel
-                    </p>
-                    <p className="post-published">Một ngày trước - 5 phút đọc</p>
+                    <img src={prop.img} alt=""/>
+                    <h2 className="post-title">{prop.title}</h2>
+                    <p className="post-desc">{prop.description}</p>
+                    <p className="post-published">{prop.time}</p>
                 </div>
             )
         }
         
         const App = () =>{
-
-            
-        
             return(
                 <div className="post-list">
+                    <PostItem 
+                        title="C#(.NET) - Tương tác với file Excel"
+                        img="https://jes.edu.vn/wp-content/uploads/2017/10/h%C3%ACnh-%E1%BA%A3nh.jpg"
+                        description="Bạn có kiến thức ngôn ngữ C#! Bạn muốn thực tương tác với file excel"
+                        time="Một ngày trước - 5 phút đọc"
+                    />
+
                     <PostItem />
                     <PostItem />
-                    <PostItem />
+
                 </div>
             )
         }
