@@ -6,65 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React.createElement</title>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
+    <div id="root"></div>
+    <div id="root2"></div>
     <script>
 
-        // // Create element with DOM
-        // const h1DOM = document.createElement('h1');
-
-        // h1DOM.title = 'Hello';
-        // h1DOM.className = 'heading';
-
-        // h1DOM.innerText = 'Hello guys';
-
-        // document.body.appendChild(h1DOM);
+        const ulReact = React.createElement(
+            'ul',
+            {},
+            React.createElement(
+                'li',
+                null,
+                'Javascript'
+            ),
+            React.createElement(
+                'li',
+                null,
+                'ReactJS'
+            )
+        )
+        const root = document.querySelector('#root');
+        ReactDOM.render(ulReact, root);
 
         
-        // // Cú pháp: React.createElement(type, props, chidlren, n);
-        // // Create element with React
-        // const h1React = React.createElement('h1', {
-        //     title: 'Hello',
-        //     className: 'heading',
-        // }, 'Hello Guys')
-
-        // console.log(h1DOM);
-        // console.log(h1React);
-
-        // const ulDom = document.createElement('ul');
-        // ulDom.id = 'ul-id';
-        // ulDom.style = 'color: red; font-size: 30px';
-
-        // const liDom1 = document.createElement('li');
-        // liDom1.innerText = 'Javascript';
-        // ulDom.id = 'li1-id';
-
-        // const liDom2 = document.createElement('li');
-        // liDom2.innerText = 'ReactJS';
-        // ulDom.id = 'li2-id';
-
-        // ulDom.appendChild(liDom1);
-        // ulDom.appendChild(liDom2);
-
-        // document.body.appendChild(ulDom)
-
-        // const ulReact = React.createElement(
-        //     'ul',
-        //     {
-        //         id: 'ul-id',
-        //         style: 'color: red; font-size: 30px',
-        //     },
-        //     React.createElement('li', {
-        //         id: 'li1-id'
-        //     }, 'Javascript'),
-        //     React.createElement('li', {
-        //         id: 'li2-id'
-        //     }, 'ReactJS'),
-        // );
-
-        // console.log(ulReact)
-
-        const ulReact = React.createElement('ul', { id:'ul-li', style: 'color: red; font-size: 30px'}, React.createElement('li', {id: 'li1-id'}, 'Javascript', React.createElement('li', {id: 'li2-id'}, 'ReactJS')),)
+        const h1 = React.createElement(
+            'h2', 
+            {
+                title: "hello", 
+                className: 'heading'
+            }, 
+            "Hello Guys!"
+        );
+        const root2 = document.querySelector('#root2');
+        ReactDOM.render(h1, root2);
     </script>
 </body>
 </html>
