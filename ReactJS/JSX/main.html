@@ -17,21 +17,23 @@
                 name: 'HTML, CSS'
             },
             {
-                name: 'Responsive web design'
+                name: 'Javascript'
             },
             {
                 name: 'ReactJS'
             },
         ]
 
-        const ulReact = 
+        const ulReact =
         <ul>
             {
                 course.map(items => <li>{items.name}</li>)
-            }    
+            }
         </ul>
 
-        ReactDOM.render(ulReact, document.getElementById('root'))
+        ReactDOM.render(ulReact, document.querySelector('#root'));
+
+
     </script>
 </body>
 </html>
