@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSX</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // const course = [
+        //     {
+        //         name: 'HTML, CSS'
+        //     },
+        //     {
+        //         name: 'Javascript'
+        //     },
+        //     {
+        //         name: 'ReactJS'
+        //     },
+        // ]
+
+        // const ulReact =
+        // <ul>
+        //     {
+        //         course.map((items, index) => <li key={index}>{items.name}</li>)
+        //     }
+        // </ul>
+
+        // ReactDOM.render(ulReact, document.querySelector('#root'));
+
+
+        // Cách xử lí 1
+        const jsx = (
+            <React.Fragment>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+            </React.Fragment>
+        )
+
+        // Cách xử lí 2
+        // const jsx = React.createElement(
+        //     React.Fragment,
+        //     null,
+        //     React.createElement('h1', null, 'Heading 1'),
+        //     React.createElement('h2', null, 'Heading 2'),
+        // )
+
+
+        ReactDOM.render(jsx, document.getElementById('root'));
+    </script>
+</body>
+</html>
