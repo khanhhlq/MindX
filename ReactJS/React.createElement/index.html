@@ -31,38 +31,40 @@
         // console.log(h1DOM);
         // console.log(h1React);
 
-        const ulDom = document.createElement('ul');
-        ulDom.id = 'ul-id';
-        ulDom.style = 'color: red; font-size: 30px';
+        // const ulDom = document.createElement('ul');
+        // ulDom.id = 'ul-id';
+        // ulDom.style = 'color: red; font-size: 30px';
 
-        const liDom1 = document.createElement('li');
-        liDom1.innerText = 'Javascript';
-        ulDom.id = 'li1-id';
+        // const liDom1 = document.createElement('li');
+        // liDom1.innerText = 'Javascript';
+        // ulDom.id = 'li1-id';
 
-        const liDom2 = document.createElement('li');
-        liDom2.innerText = 'ReactJS';
-        ulDom.id = 'li2-id';
+        // const liDom2 = document.createElement('li');
+        // liDom2.innerText = 'ReactJS';
+        // ulDom.id = 'li2-id';
 
-        ulDom.appendChild(liDom1);
-        ulDom.appendChild(liDom2);
+        // ulDom.appendChild(liDom1);
+        // ulDom.appendChild(liDom2);
 
-        document.body.appendChild(ulDom)
+        // document.body.appendChild(ulDom)
 
-        const ulReact = React.createElement(
-            'ul',
-            {
-                id: 'ul-id',
-                style: 'color: red; font-size: 30px',
-            },
-            React.createElement('li', {
-                id: 'li1-id'
-            }, 'Javascript'),
-            React.createElement('li', {
-                id: 'li2-id'
-            }, 'ReactJS'),
-        );
+        // const ulReact = React.createElement(
+        //     'ul',
+        //     {
+        //         id: 'ul-id',
+        //         style: 'color: red; font-size: 30px',
+        //     },
+        //     React.createElement('li', {
+        //         id: 'li1-id'
+        //     }, 'Javascript'),
+        //     React.createElement('li', {
+        //         id: 'li2-id'
+        //     }, 'ReactJS'),
+        // );
 
-        console.log(ulReact)
+        // console.log(ulReact)
+
+        const ulReact = React.createElement('ul', { id:'ul-li', style: 'color: red; font-size: 30px'}, React.createElement('li', {id: 'li1-id'}, 'Javascript', React.createElement('li', {id: 'li2-id'}, 'ReactJS')),)
     </script>
 </body>
 </html>
