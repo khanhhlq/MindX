@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React elements type</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        // function Header(){
+        //     return(
+        //         <div className="header">Header aaa</div>
+        //     )
+        // }
+
+        // class Content extends React.Component {
+        //     render(){
+        //         return(
+        //             <div className="content">New Content</div>
+        //         )
+        //     }
+        // }
+
+        // const app = (
+        //     <div className="wrapper">
+        //         <Header />
+        //         <Content />
+        //         <div className="footer">Footer</div>
+        //     </div>
+        // )
+
+        // console.log(app)
+        // ReactDOM.render(app, document.querySelector("#app"))
+
+        const root = document.querySelector('#app')
+
+        const PostItem = () =>{
+            return(
+                <div className="post-item">
+                    <label htmlFor="email">Email</label>
+                    <input id="email" />
+                    <img src="https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/s600x600/272082159_1089064824987684_3799257947133290859_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=b9115d&_nc_ohc=-AkrZCghJtkAX-4JACN&_nc_ht=scontent.fsgn5-15.fna&oh=00_AT_3mOFruWLF7hwwwGqPYZBcEQyqiHRaWlcqxpkoJ3SqvQ&oe=61EB5A42" alt=""/>
+                    <h2 className="post-title">C#(.NET) - Tương tác với file Excel</h2>
+                    <p className="post-desc">Bạn có kiến thức ngôn ngữ C#! Bạn muốn thực tương tác với file
+                    excel
+                    </p>
+                    <p className="post-published">Một ngày trước - 5 phút đọc</p>
+                </div>
+            )
+        }
+        
+        const App = () =>{
+
+            
+        
+            return(
+                <div className="post-list">
+                    <PostItem />
+                    <PostItem />
+                    <PostItem />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, root)
+
+    </script>
+
+</body>
+</html>
