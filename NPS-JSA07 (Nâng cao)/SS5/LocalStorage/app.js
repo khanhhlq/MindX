@@ -15,7 +15,7 @@ localStorage.setItem("motobikeLicense", "Đây là bằng lái của tôi")
 
 // VD: Lưu trữ thông tin người dùng:
 
-let QuocKhanh ={
+let QuocKhanh = {
     name: "Lê Quốc Khánh",
     age: 24,
     address: "Hà nội",

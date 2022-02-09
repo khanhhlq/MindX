@@ -39,3 +39,39 @@
   color: #fff;
   height: 20px;
 }
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 80px 50px;
+}
+
+.city-name {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.weather-state {
+  font: 13px;
+}
+
+.weather-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.temperature {
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.additional-section {
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-size: 13px;
+}
