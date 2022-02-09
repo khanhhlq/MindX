@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.container {
+  color: #fff;
+  background: linear-gradient(145deg, #1193b0, #6d6d6d);
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
