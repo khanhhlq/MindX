@@ -7,6 +7,7 @@
 // Khởi tạo localStorage
 // Cách 1: 
 
+f
 localStorage.id = "0123456789"
 
 // Cách 2:
@@ -42,7 +43,7 @@ localStorage.cmnd = "0987654321 + Đây là CMT mới được cập nhập"
 localStorage.setItem("cmnd", "0987654321 + Đây là CMT mới được update trong LocalStorage")
 
 // Xoá từ khoá và giá trong localStorage
-localStorage.removeItem("cmnd")
+localStorage.removeItem("cmnd");
 localStorage.removeItem("id")
 
 
