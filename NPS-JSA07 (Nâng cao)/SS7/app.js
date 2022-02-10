@@ -5,7 +5,7 @@ console.log("Pi: ", Pi);
 // 2. Block & Scoped ( Các cú pháp khai báo: let, var)
 let a = "Hello"
 var b = "World"
-console.log(a+ " " + b)
+console.log(a + " " + b)
 
 // Ví dụ:
 {
@@ -23,19 +23,19 @@ console.log("con: ", con);
 
 // 3. Arrow Function
 // Các khai báo hàm bình thường
-let sum = function sum(a, b){
+let sum = function sum(a, b) {
     return a + b;
 }
 
-console.log("sum(1,2): ", sum(1,2));
+console.log("sum(1,2): ", sum(1, 2));
 
 // Arrow Function thì như sau:
 
-const sum2 = (a, b) =>{
+const sum2 = (a, b) => {
     return a + b;
 }
 
-console.log("sum2(3,4): ", sum2(3,4));
+console.log("sum2(3,4): ", sum2(3, 4));
 
 // Cú pháp tổng quát
 
@@ -46,24 +46,24 @@ const tenHam = (parmeters, ...) =>{
 */
 
 // VD: Arrow Function
-let arr = [1,2,3,4,5];
+let arr = [1, 2, 3, 4, 5];
 arr.forEach(i => console.log(a + " => " + i * i))
 
 
 // 4. Các tham số mặc định (pending)
 
-let hamX = (a, b = 1) => a*b;
+let hamX = (a, b = 1) => a * b;
 console.log(hamX(2, 3));
 
 // 5. Các tham số còn lại
 
-const X = (a, b, ...args) =>{
+const X = (a, b, ...args) => {
     console.log(`a = ${a}, ${b}, ...${args.length} args left`)
     console.log(args);
 }
 
-X(2,3);
-X(1,2,3,4,5);
+X(2, 3);
+X(1, 2, 3, 4, 5);
 
 
 // Bài tập ôn luyện cho phần đã học:
