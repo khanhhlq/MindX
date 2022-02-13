@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT 2</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Nhap so a");
+        let b = prompt("Nhap so b");
+
+        const tamgiac = () => {
+            let canhHuyen = Math.sqrt((a * a) + (b * b));
+            let duongCao = Math.sqrt(((a * a) * (b * b)) / ((a * a) + (b * b)));
+            alert("Do dai canh huyen la: " + canhHuyen);
+            alert("Do dai duong cao la: " + duongCao);
+        }
+
+        tamgiac(a, b);
+    </script>
+</body>
+
+</html>
