@@ -11,13 +11,15 @@
 <body>
     <div id="root"></div>
     <script>
-        let a = prompt("Nhập số a:");
-        let b = prompt("Nhập số b: ");
-        const equation = (a, b) => {
-            let x = -b / a;
-        }
 
-        alert(equation(a, b))
+        let a = prompt("Nhập số a");
+        let b = prompt("Nhập số b");
+        const equation = () => {
+            let x = -b / a;
+            alert(`Phương trình ${a}x + ${b} = 0 có nghiệm là: ` + x);
+        }
+        equation(a, b);
+
     </script>
 </body>
 
