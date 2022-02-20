@@ -6,7 +6,7 @@ let menu = [
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quaerat, incidunt dolorum quod nisi unde autem. Labore atque necessitatibus maxime sit, deleniti inventore quaerat praesentium porro facere exercitationem, sunt officiis?",
         image: 'https://cdn.pixabay.com/photo/2020/11/29/07/06/honey-5786664_960_720.png'
     },
-    
+
     {
         id: 2,
         name: "Banh da cua",
@@ -63,8 +63,8 @@ let products = document.querySelector('.products');
 
 
 
-for (item of menu){
-    products.innerHTML+=`
+for (item of menu) {
+    products.innerHTML += `
     <div class="item">
         <div class="product-view">
             <img src="${item.image}" alt="Error Image" class="img-icon">
