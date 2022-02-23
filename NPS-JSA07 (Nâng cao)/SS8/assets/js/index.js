@@ -11,7 +11,6 @@ const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind-speed");
 
 searchInput.addEventListener("change", (event) => {
-    console.log(event.target.value);
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${API_KEY}&lang=vi&units=metric`)
         .then(response => response.json())
         .then((data) => {
