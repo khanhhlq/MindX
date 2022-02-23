@@ -31,6 +31,11 @@
   margin-right: 5px;
   position: absolute;
   left: 0;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  color: #cacaca;
 }
 
 #search-input {

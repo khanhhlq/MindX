@@ -23,7 +23,7 @@ searchInput.addEventListener("change", (event) => {
             sunrise.innerHTML = moment.unix(data.sys.sunrise).format('HH:mm') || DEFAULT_VALUE;
             sunset.innerHTML = moment.unix(data.sys.sunset).format('HH:mm') || DEFAULT_VALUE;
             humidity.innerHTML = data.main.humidity || DEFAULT_VALUE;
-            windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(2) || DEFAULT_VALUE;
+            windSpeed.innerHTML = Math.round((data.wind.speed * 3.6).toFixed(2)) || DEFAULT_VALUE;
         })
 })
 
