@@ -7,7 +7,11 @@
 }
 
 body {
-  background-image: url();
+  background-image: url("https://images8.alphacoders.com/905/thumb-1920-905232.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -19,6 +23,7 @@ body {
   border-radius: 5px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.233);
 }
 
 .search-bar {
