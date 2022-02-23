@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url();
+}
+
 .container {
   color: white;
-  background: linear-gradient(145deg, #2193b0, #6dd5ed);
+  /* background: linear-gradient(145deg, #2193b0, #6dd5ed); */
+  background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
   width: 400px;
   margin: 50px auto;
   border-radius: 5px;
