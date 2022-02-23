@@ -51,13 +51,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   padding: 80px 50px;
 }
 
 .city-name {
   font-size: 20px;
-  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 .weather-state {
