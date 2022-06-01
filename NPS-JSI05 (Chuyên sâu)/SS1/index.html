@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SS1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+      <div class="todo">
+        <h1>Todo</h1>
+        <p>What do you want to get done today?</p>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter task" />
+        </form>
+      </div>
+
+      <div class="list-todo">
+        <ul id="todo"></ul>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
