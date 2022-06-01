@@ -19,26 +19,26 @@ LocalStorage là gì?
 
 // Hàm Key()
 // Key(): Dùng để lấy một giá trị/chuỗi từ một vị trí cụ thể. Chỉ mục có thể được truyền vào phương thức key() như một tham số
-localStorage.setItem("user", "Khanh")
-console.log("user: ", localStorage.key(1))
+// localStorage.setItem("user", "Khanh")
+// console.log("user: ", localStorage.key(1))
 
 //setItem(): phương thưc này dùng để lưu trữ các phần tử trong LS
-localStorage.setItem("str", "ABCDXYZ")
+// localStorage.setItem("str", "ABCDXYZ")
 
 
 // lấy ra dữ liệu từ LocalStorage
-const getStr = localStorage.getItem("str")
-console.log("getStr: ", getStr);
+// const getStr = localStorage.getItem("str")
+// console.log("getStr: ", getStr);
 
 //lưu trữ đối tượng trên LocalStorage 
-const Car = {
-    brand: "Suzuki",
-    color: "white",
-    price: 10000
-  }
+// const Car = {
+//     brand: "Suzuki",
+//     color: "white",
+//     price: 10000
+//   }
   
-localStorage.setItem("car", JSON.stringify(Car));
-let car = JSON.parse(localStorage.getItem("car")) 
-console.log("car: ", car);
+// localStorage.setItem("car", JSON.stringify(Car));
+// let car = JSON.parse(localStorage.getItem("car")) 
+// console.log("car: ", car);
   
   
