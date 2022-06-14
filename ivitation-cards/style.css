@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Opens Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: #008888;
+    height: 100vh;
+}
+
+.card{
+    background-color: #fdfdfd;
+    box-shadow: 6px 5px 6px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 1.4rem;
+    height: 70vh;
+    width: 25vw;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.birthday{
+    max-height: 35vh;
+}
+
+.text, h1, p{
+    padding: 5px 0px;
+}
+
+.text h1{
+    color: #030303;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+
+.text p{
+    font-style: italic;
+}
+
+.info{
+    list-style: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.space {
+    height: 50px;
+}
