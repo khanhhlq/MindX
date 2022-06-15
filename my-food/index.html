@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food 🍔</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar (hidden by default) -->
+    <nav style="display: none;" id="mySidebar">
+        <a href="#" onclick="btnClose()" class="items-button">Close Menu</a>
+        <a href="#food" onclick="btnClose()" class="items-button">Food</a>
+        <a href="#about" onclick="btnClose()" class="items-button">About</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="top-menu">
+        <div onclick="btnOpen()" style="cursor: pointer">☰</div>
+        <div>My Food</div>
+        <div>Mail</div>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+        <!-- Photo Gird -->
+        <div class="gird-photo" id="food">
+            <div class="photo">
+                <img src="./images/sandwich.jpg" alt="No image">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/cherries.jpg" alt="No image">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/croissant.jpg" alt="No image">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.<br /><br />What else?</p>
+            </div>
+            <div class="photo">
+                <img src="./images/popsicle.jpg" alt="No image">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/salmon.jpg" alt="No image">
+                <h3>Salmon For Your Skin</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/steak.jpg" alt="No image">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/wine.jpg" alt="No image">
+                <h3>Le French</h3>
+                <p>Le French</p>
+            </div>
+            <div class="photo">
+                <img src="./images/sandwich (1).jpg" alt="No image" width="320">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <div class="bar">
+                <a href="#" class="bar-items">«</a>
+                <a href="#" class="bar-items highlight">1</a>
+                <a href="#" class="bar-items">2</a>
+                <a href="#" class="bar-items">3</a>
+                <a href="#"class="bar-items">4</a>
+                <a href="#"class="bar-items">»</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- About Section -->
+        <div class="about" id="about">
+            <h2>About Me, The Food Man</h2><br />
+            <img src="images/chef.jpg" alt="chef" width="800" height="533">
+            <div class="content">
+                <h4><b>I am Who I Am!</b></h4>
+                <h6><i>With Passion For Real, Good Food</i></h6>
+                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an 
+                    interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent 
+                    tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue 
+                    gravida diam non fringilla.
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-items">
+                <h5>FOOTER</h5>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p style="padding-top: 16px">Powered by <a style="margin-left: 5px; background-color: #cccccc; color: #242424;" href="https://www.w3schools.com/w3css/default.asp" target="_blank"> w3.css</a></p>
+            </div>
+        
+            <div class="footer-items">
+                <h5>BLOG POSTS</h5>
+                <ul style="list-style: none">
+                    <li class="content-ul">
+                        <img src="images/workshop.jpg" style="width: 50px; margin: 0px 16px;">
+                        <div class="sub-content">
+                            <span class="title" style="font-size: 18px">Lorem</span>
+                            <span>Sed mattis nunc</span>
+                        </div>
+                    </li>
+                    <hr />
+                    <li class="content-ul">
+                        <img src="images/gondol.jpg" style="width: 50px; margin: 0px 16px;">
+                        <div class="sub-content">
+                            <span class="title" style="font-size: 18px">Ipsum</span>
+                            <span>Praes tinci sed</span>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+
+            <div class="footer-items">
+                <h5>POPULAR TAGS</h5>
+                <p class="tag">
+                    <span class="key">Travel</span> 
+                    <span>New York</span> 
+                    <span>Dinner</span>
+                    <span>Salmon</span> 
+                    <span>France</span> 
+                    <span>Drinks</span>
+                    <span>Ideas</span> 
+                    <span>Flavors</span> 
+                    <span>Cuisine</span>
+                    <span>Chicken</span> 
+                    <span>Dressing</span> 
+                    <span>Fried</span>
+                    <span>Fish</span> 
+                    <span>Duck</span>
+                </p>
+            </div>
+        </footer>
+
+    <!-- End Page Content -->
+    </div> 
+    
+    <script src="app.js"></script>
+</body>
+</html>
