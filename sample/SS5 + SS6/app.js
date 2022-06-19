@@ -106,10 +106,26 @@ for (let items of products.data) {
     container.appendChild(price);
 
     let btn = document.createElement("button")
-    btn.setAttribute("id", "btn")
+    btn.setAttribute("onclick", "addToCart()")
     btn.innerHTML = "Thêm vào giỏ hàng"
     container.appendChild(btn)
   
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
+}
+
+for (let i of products.data){
+    let product = JSON.parse(localStorage.product)
+    product.push({
+        name: items.name,
+        price: items.price , 
+        images: items.image
+    })
+
+    localStorage.setItem("product", JSON.stringify(product))
+}
+
+
+const addToCart = () => {
+    
 }

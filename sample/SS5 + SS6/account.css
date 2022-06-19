@@ -11,7 +11,7 @@ body {
   margin:0;
   padding:0;
   font-family: sans-serif;
-  background-image: url("../images/banner.jpg");
+  background-image: url("images/banner.jpg");
 }
   
 .account-box {
@@ -51,7 +51,7 @@ body {
 }
 
 
-.account-box form a {
+.account-box form .btn {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -65,7 +65,7 @@ body {
   letter-spacing: 4px
 }
 
-.account-box a:hover {
+.account-box .btn:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
@@ -73,4 +73,25 @@ body {
               0 0 25px #03e9f4,
               0 0 50px #03e9f4,
               0 0 100px #03e9f4;
+}
+
+.selector{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.account{
+  text-decoration: none;
+  color: #ffff;
+}
+
+.account:hover{
+  text-decoration: underline;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  background: none;
 }

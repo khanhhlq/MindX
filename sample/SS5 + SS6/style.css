@@ -125,7 +125,7 @@ a{
 #products .card .container button{
     background-color: white;
     border: none;
-    border: solid 2px black;
+    border: solid 1px black;
     margin-top: 14px;
     padding: 5px 0px;
     text-transform: uppercase;
