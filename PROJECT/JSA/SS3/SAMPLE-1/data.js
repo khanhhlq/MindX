@@ -89,10 +89,18 @@ for (let i of products.data) {
 document.getElementById("search").addEventListener("click", () => {
     let searchInput = document.getElementById("search-input").value.toUpperCase()
     let cards = document.querySelectorAll(".card")
-    let productsName = document.querySelectorAll(".product-name")
+    let products = document.querySelectorAll(".product-name")
     let prices = document.querySelectorAll('h6')
 
-    productsName.forEach((items, index) => {
+    products.forEach((items, index) => {
+        if (items.innerText.includes(searchInput)){
+            cards[index].classList.remove("hide")
+        } else{
+            cards[index].classList.add("hide")
+        }
+    })
+
+    prices.forEach((items, index) => {
         if (items.innerText.includes(searchInput)){
             cards[index].classList.remove("hide")
         } else{
@@ -100,3 +108,4 @@ document.getElementById("search").addEventListener("click", () => {
         }
     })
 })
+  
