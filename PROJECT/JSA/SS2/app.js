@@ -1,4 +1,4 @@
-// Sample 1
+//// Sample 1
 console.log("*** SAMPLE 1 ***")
 
 let animals = ["Dog", "Cat", "Frog"]
@@ -18,7 +18,7 @@ console.log("UPDATE: ", animals)
 animals.splice(1, 2)
 console.log("UPDATE: ", animals)
 
-// Sample 2
+//// Sample 2
 console.log("*** SAMPLE 2 ***")
 
 let colors = ["red", "blue", "yellow"]
@@ -39,44 +39,58 @@ colors.splice(2, 3)
 console.log("UPDATE: ", colors)
 
 
-let n = prompt("Người dùng nhập vào số món ăn muốn lưu");
-n = Number(n);
-let menu = [];
-let i = 1
-do {
-  let x = prompt(`Mời người dùng nhập vào món ăn thứ ${i}`);
-  menu.push(x);
-  i = i + 1;
-}
-while (i <= n);
 
-console.log("Menu món ăn hiện tại là", menu);
-let input;
+//// Sample 3 (Object)
+console.log("*** SAMPLE 3 ***")
 
-do {
-  input = prompt("Mời người dùng nhập vào C,R,U,D");
-  if (input == 'c') { // tại đây kiểm tra input == c hay ko
-    menu.push(prompt("Mời người dùng nhập món ăn muốn thêm"));
-    console.log("Menu món ăn sau khi thêm là:", menu);
-  }
-  else if (input == 'r') {
-    console.log("Menu món ăn được in ra là:", menu);
-  }
-  else if (input == 'u') {
-    // tìm được vị tri của phần tử muốn update
-    let viTriUpdate = menu.indexOf(prompt("người dùng nhập món muốn update"))
-    menu[viTriUpdate] = prompt("Người dùng nhập món ăn mới thay thế món cũ:")
-    console.log("Menu món ăn sau khi update là:", menu);
-  }
-  else if (input == 'd') {
-    let viTriDelete = menu.indexOf(prompt("người dùng nhập món muốn Delete"));
-    menu.splice(viTriDelete, 1);
-    console.log("Menu món ăn sau khi delete là:", menu);
-  }
-  else {
-    alert("Không tồn lại lựa chọn => thoát vòng lặp");
-  }
+let people = {
+    name: "Nguyen Van A",
+    age: 25,
+    sex: "Male",
+    cccd: 1234567890,
+    address: "Ha Noi",
+    job: "Developer",
+    hobbies: "Coding",
 }
-while (input == 'c' || input == 'r' || input == 'u' || input == 'd');
+
+// Create ✅
+people.sport = "football"
+console.log("COMMAND CREATE:", people)
+
+// Read 📖
+console.log("COMMAND READ: ", people)
+
+// Update 🚀
+people.age = "27"
+console.log("COMMAND UPDATE", people)
+
+// Delete ❌
+delete people.address
+console.log("COMMAND DELETE", people)
+
+
+
+//// Sample 4 (Array)
+console.log("*** SAMPLE 4 ***")
+
+let OS = ["Windowns", "Android", "Linux"]
+
+// Create ✅
+OS.push("MacOS")
+console.log("COMMAND CREATE:", OS)
+
+// Read 📖
+console.log("COMMAND READ: ", OS)
+
+// Update 🚀
+OS[0] = null
+console.log("COMMAND UPDATE", OS)
+
+// Delete ❌
+// OS.pop() // Xoá phần tử cuối mảng
+// courses.shift() // Xoá phần từ đầu mảng
+OS.splice(0, 3)
+console.log("COMMAND DELETE", OS)
+
 
 
