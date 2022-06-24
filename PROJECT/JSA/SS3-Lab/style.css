@@ -2,7 +2,8 @@
 
 
 body{
-  background: #f2f2f2;
+  background-image: url("https://bobui.vn/assets/img/shopee/20220610.jpg");
+  background-size: cover;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -73,6 +74,7 @@ body{
 }
 
 .card:hover{
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.301);
   transform: translateY(-0.09in);
 }
 
