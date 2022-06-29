@@ -10,6 +10,13 @@ form.addEventListener("submit", (event) => {
     addTodo();
 })
 
+let close = document.getElementsByClassName("deleteBtn")
+for (let i = 0; i < close.length; i++){
+    close[i].onclick = function(){
+        document.getElementsByName("todolist").style.display = "none"
+    }
+}
+
 const addTodo = () => {
     const newTodo = input.value
     if (!newTodo) return console.log("No value! ❌") || alert("No value! ❌")
@@ -18,7 +25,7 @@ const addTodo = () => {
         completed: false
     })
     localStorage.setItem("todos", JSON.stringify(todoList))
-    
+
     render()
 }
 
@@ -28,6 +35,7 @@ const render = () => {
 
     for (let i = 0; i < todoList.length; i++){
         let li = document.createElement("li")
+        li.classList.add("todolist")
         todo.appendChild(li)
         li.innerHTML = `${todoList[i].text}`
 
@@ -56,14 +64,10 @@ const render = () => {
                 checkbox.checked = todoList[i].completed
             }
         })
-        
-        let close = document.getElementsByClassName("deleteBtn")
-        for(i = 0; i < close.length; i++){
-            close[i].onclick = function() {
-             let div = document.querySelector("li")
-                div.style.display = "none"
-            }
-        }
-    
+
+        btn.addEventListener("click", () => {
+            li.style.display = "none"
+        })
     }   
+    
 }
