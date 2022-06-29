@@ -72,6 +72,6 @@ const render = () => {
     }   
 }
 
-(function() {
+(() => {
     render()
 })()
