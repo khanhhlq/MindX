@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
 
 let todoList = []
 
-const deleteTodo = (index) => {
+const deleteBtn = (index) => {
     todoList.splice(index, 1);
     localStorage.setItem('todos', JSON.stringify(todoList))
     render()
@@ -50,8 +50,8 @@ const render = () => {
 
         let btn = document.createElement("button")
         let text = document.createTextNode("X")
-        btn.classList.add("deleteBtn")
-        btn.setAttribute("onclick", "deleteTodo()")
+        btn.classList.add("delBtn")
+        btn.setAttribute("onclick", "deleteBtn("+ i +")")
 
         btn.appendChild(text)
         div.appendChild(btn)
