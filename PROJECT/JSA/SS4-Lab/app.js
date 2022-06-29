@@ -3,28 +3,31 @@ const input = document.getElementById("input")
 const button = document.getElementById("button")
 const todo = document.getElementById("todo")
 
-let todoList = []
-
 form.addEventListener("submit", (event) => {
     event.preventDefault()
-    addTodo();
+    addTodo()
 })
 
-let close = document.getElementsByClassName("deleteBtn")
-for (let i = 0; i < close.length; i++){
-    close[i].onclick = function(){
-        document.getElementsByName("todolist").style.display = "none"
-    }
+let todoList = []
+
+const deleteTodo = (index) => {
+    todoList.splice(index, 1);
+    localStorage.setItem('todos', JSON.stringify(todoList))
+    render()
 }
 
 const addTodo = () => {
     const newTodo = input.value
+
     if (!newTodo) return console.log("No value! ❌") || alert("No value! ❌")
     todoList.push({
         text: newTodo,
         completed: false
     })
+
     localStorage.setItem("todos", JSON.stringify(todoList))
+
+    input.value = ""
 
     render()
 }
@@ -40,7 +43,6 @@ const render = () => {
         li.innerHTML = `${todoList[i].text}`
 
         let div = document.createElement("div")
-
         let checkbox = document.createElement("input")
         checkbox.type = "checkbox"
         div.appendChild(checkbox)
@@ -48,10 +50,12 @@ const render = () => {
         let btn = document.createElement("button")
         let text = document.createTextNode("X")
         btn.classList.add("deleteBtn")
+        btn.setAttribute("onclick", "deleteTodo()")
+
         btn.appendChild(text)
         div.appendChild(btn)
-
         li.appendChild(div)
+
         checkbox.addEventListener("click", (event) => {
             todoList[i].completed = event.target.checked
             if (todoList[i].completed) {
@@ -64,10 +68,6 @@ const render = () => {
                 checkbox.checked = todoList[i].completed
             }
         })
-
-        btn.addEventListener("click", () => {
-            li.style.display = "none"
-        })
     }   
-    
 }
+
