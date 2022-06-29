@@ -56,5 +56,14 @@ const render = () => {
                 checkbox.checked = todoList[i].completed
             }
         })
+        
+        let close = document.getElementsByClassName("deleteBtn")
+        for(i = 0; i < close.length; i++){
+            close[i].onclick = function() {
+             let div = document.querySelector("li")
+                div.style.display = "none"
+            }
+        }
+    
     }   
 }
