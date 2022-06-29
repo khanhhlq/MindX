@@ -45,6 +45,7 @@ const render = () => {
         let div = document.createElement("div")
         let checkbox = document.createElement("input")
         checkbox.type = "checkbox"
+        checkbox.style.cursor = "pointer"
         div.appendChild(checkbox)
 
         let btn = document.createElement("button")
@@ -71,3 +72,6 @@ const render = () => {
     }   
 }
 
+(function() {
+    render()
+})()
