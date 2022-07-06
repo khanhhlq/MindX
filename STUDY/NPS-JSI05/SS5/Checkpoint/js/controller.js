@@ -31,3 +31,17 @@ controller.register = (dataRegister) => {
         document.getElementById("confirm-password-error").innerText = ""
     }
 }
+
+controller.login = (dataLogin) => {
+    if (dataLogin.email.trim() == "") {
+        document.getElementById("email-error").innerText = "(*) Please input your email"
+    }else {
+        document.getElementById("email-error").innerText = ""
+    }
+
+    if (dataLogin.password.trim() == "") {
+        document.getElementById("password-error").innerText = "(*) Please input your password"
+    }else {
+        document.getElementById("password-error").innerText = ""
+    }
+}

@@ -29,6 +29,11 @@
     cursor: pointer;
 }
 
+.cursor a{
+    text-decoration: none;
+    color: black;
+}
+
 .form-action .cursor:hover{
     color: red;
 }

@@ -17,15 +17,17 @@
 
             <form id="login-form">
                 <div class="input-wrapper">
-                    <input type="email" placeholder="Email ...">
+                    <input type="email" name="email" placeholder="Email ...">
+                    <div class="error" id="email-error"></div>
                 </div>
 
                 <div class="input-wrapper">
-                    <input type="password" placeholder="Password ...">
+                    <input type="password" name="password" placeholder="Password ...">
+                    <div class="error" id="password-error"></div>
                 </div>
 
                 <div class="form-action">
-                    <span class="cursor">Don't have an account? Register</span>
+                    <span class="cursor"><a href="register.html">Don't have an account? Register</a></span>
                     <button class="btn" type="submit">Login</button>
                 </div>
             </form>
@@ -33,5 +35,6 @@
     </div>
     
     <script src="js/login.js"></script>
+    <script src="js/controller.js"></script>
 </body>
 </html>
