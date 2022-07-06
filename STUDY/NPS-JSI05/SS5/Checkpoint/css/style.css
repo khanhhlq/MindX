@@ -29,6 +29,10 @@
     cursor: pointer;
 }
 
+.form-action .cursor:hover{
+    color: red;
+}
+
 .header{
     height: 64px;
     background-color: #037bfe;
@@ -36,4 +40,8 @@
     text-align: center;
     color: #fff;
     font-size: 30px;
+}
+
+.error{
+    color: red;
 }
