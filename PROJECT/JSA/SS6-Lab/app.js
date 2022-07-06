@@ -106,7 +106,7 @@ for (let items of products.data) {
     container.appendChild(price);
 
     let btn = document.createElement("button")
-    btn.setAttribute("onclick", "addToCart()")
+    btn.setAttribute("onclick", "addToCart("+ i +")")
     btn.innerHTML = "Thêm vào giỏ hàng"
     container.appendChild(btn)
   
