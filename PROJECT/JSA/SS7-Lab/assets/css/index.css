@@ -1,0 +1,151 @@
+/* Stylesheet for Local Weather App */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+  height: 100%;
+  background: linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
+  background: -webkit-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
+  background: -moz-linear-gradient(to bottom, #4C739B 0%, #B0D5A7 100%) fixed;
+}
+
+#weatherbox {
+  /*box-shadow: 2px 2px 10px #FFFFFF;*/
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 5vw;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  width: 300px;
+  height: 350px;
+}
+
+#topbox {
+  border-bottom: 1px #FFFFFF solid;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+
+#middlebox {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#midmid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#bottombox {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bottomsides {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wi {
+  width: 100%;
+  font-size: 55px;
+}
+
+button {
+  color: #FFFFFF;
+  outline: none;
+}
+
+#temp {
+  font-size: 75px;
+  padding-left: 10px;
+}
+
+.fc {
+  border: none;
+  border-radius: 50%;
+  font-size: 35px;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.fc:hover {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  /*color: #4C739B;
+  background-color: #FFFFFF;*/
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 5vw;
+	background-color: #000000;
+	z-index: 2;
+}
+
+#pagebottom {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+#contact {
+	margin: 0px 10px;
+	padding: 0px 10px;
+	color: #C1C1C1;
+	font-family: sans-serif;
+}
+
+#social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-right: 10vw;
+	height: 90%;
+}
+
+footer div a i {
+  color: #C1C1C1;
+	margin: 0px 10px;
+}
+
+footer div a i:hover {
+	color: #B0D5A7;
+}

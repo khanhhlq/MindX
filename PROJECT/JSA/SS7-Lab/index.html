@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <link rel="shortcut icon" href="http://openweathermap.org/img/wn/10d@2x.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="weatherbox">
+        <div id="topbox">
+            <span id="city"></span>
+        </div>
+        <div id="middlebox">
+            <div id="midmid">
+                <span><i id="currenticon"></i></span>
+                <span id="temp"></span>
+                <button class="fc">F</button>
+            </div>
+            <span id="desc"></span>
+        </div>
+        <div id="bottombox">
+            <div class="bottomsides">
+                <span><i class="wi wi-raindrop"></i></span>
+                <span id="hum"></span>
+            </div>
+            <div class="bottomsides">
+                <span><i class="wi wi-strong-wind"></i></span>
+                <span id="wind"></span>
+            </div>
+        </div>
+    </div>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/moment.js"></script>
+
+</html>
