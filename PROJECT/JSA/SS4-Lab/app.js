@@ -57,6 +57,16 @@ const render = () => {
         div.appendChild(btn)
         li.appendChild(div)
 
+        if (todoList[i].completed) {
+            li.classList.add("completed")
+            li.classList.remove("uncompleted")
+            checkbox.checked = todoList[i].completed
+        } else{
+            li.classList.add("uncompleted")
+            li.classList.remove("completed")
+            checkbox.checked = todoList[i].completed
+        }
+        
         checkbox.addEventListener("click", (event) => {
             todoList[i].completed = event.target.checked
             if (todoList[i].completed) {
@@ -75,21 +85,5 @@ const render = () => {
 }
 
 (() => {
-    // todoList = JSON.parse(localStorage.getItem("todos")) || []
-
-    // let li = document.getElementsByClassName("todolist")
-    // for (let i = 0; i <= todoList.length; i++){
-    //     if (todoList[i].completed == true) {
-    //         li.classList.add("completed")
-    //         li.classList.remove("uncompleted")
-    //         checkbox.checked = todoList[i].completed
-    //     } else{
-    //         li.classList.add("uncompleted")
-    //         li.classList.remove("completed")
-    //         checkbox.checked = todoList[i].completed
-    //     }
-    // }
-
-
     render()
 })()
