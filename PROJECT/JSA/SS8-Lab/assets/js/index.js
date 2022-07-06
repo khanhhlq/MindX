@@ -18,5 +18,10 @@ searchInput.addEventListener("change", (event) => {
             weatherState.innerHTML = data.weather[0].description || DEFAULT_VALUE;
             weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png` || DEFAULT_VALUE;
             temperature.innerHTML = Math.round(data.main.temp) || DEFAULT_VALUE;          
+        
+            sunrise.innerHTML = moment.unix(data.sys.sunrise).format('HH:mm') || DEFAULT_VALUE
+            sunset.innerHTML = moment.unix(data.sys.sunset).format('HH:mm') || DEFAULT_VALUE
+            humidity.innerHTML = data.main.humidity || DEFAULT_VALUE
+            windSpeed.innerHTML = Math.round((data.wind.speed * 3.6).toFixed(2)) || DEFAULT_VALUE
         })
 })
