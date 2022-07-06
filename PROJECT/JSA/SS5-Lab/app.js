@@ -113,4 +113,3 @@ for (let items of products.data) {
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
 }
-
