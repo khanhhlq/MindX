@@ -1,8 +1,12 @@
 const registerForm = document.getElementById("register-form");
+const redirectToLogin = document.getElementById("redirect-to-login")
 
+redirectToLogin.addEventListener("click", () => {
+  window.location.href = "./login.html"
+})
 
 registerForm.addEventListener("submit", (event) => {
-  event.preventDefault(); // ngan su kien reload mac dinh cua trinh duyet
+  event.preventDefault();
   const dataRegister = {
     firstName: registerForm.firstName.value,
     lastName: registerForm.lastName.value,
@@ -11,9 +15,6 @@ registerForm.addEventListener("submit", (event) => {
     confirmPassword: registerForm.confirmPassword.value
   }
 
-  // Hàm check lỗi người dùng nhập dữ liệu (tạm bỏ)
-
-  // Hàm đăng ký => Gửi email xác thực dữ liệu về gmail của mình
   const register = async (data) => {
     try {
       await firebase.auth().createUserWithEmailAndPassword(data.email, data.password)
@@ -26,13 +27,7 @@ registerForm.addEventListener("submit", (event) => {
     }
   }
 
-
-  // Gọi hàm
   register(dataRegister);
-
-
-
-
 })
 
 
