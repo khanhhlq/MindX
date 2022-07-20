@@ -6,7 +6,8 @@ redirectToRegister.addEventListener("click", () => {
 })
 
 loginForm.addEventListener("click", (event) => {
-    event.preventDefault()
+    event.preventDefault();
+    
     const dataLogin = {
         email: loginForm.email.value,
         password: loginForm.password.value
