@@ -1,52 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.input-wrapper{
-    margin-bottom: 10px;
+.input-wrapper input {
+  border: 1px solid #dbdbdb;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
 }
 
-.input-wrapper input{
-    border: 1px solid #dbdbdbdb;
-    border-radius: 5px;
-    width: 100%;
-    outline: none;
-    padding: 10px 15px;
+.input-wrapper {
+  margin-bottom: 10px;
 }
 
-.btn{
-    padding: 8px 20px;
-    background-color: #037bfe;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid black;
-    cursor: pointer;
+.btn {
+  padding: 8px 20px;
+  background-color: #037bfe;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
 }
 
-.cursor a{
-    text-decoration: none;
-    color: black;
+.form-action .cursor:hover {
+  color: red;
 }
 
-.form-action .cursor:hover{
-    color: red;
+.header {
+  height: 64px;
+  background-color: #037bfe;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
 }
 
-.header{
-    height: 64px;
-    background-color: #037bfe;
-    line-height: 64px;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-}
 
-.error{
-    color: red;
+.error {
+  color: red;
 }
