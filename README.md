@@ -1,2 +1,2 @@
 ### MINDX 🐏
-#### sum up about the state of learning at mindx - blow off some steam
+#### sum up about the state of learning at mindx - level internship
